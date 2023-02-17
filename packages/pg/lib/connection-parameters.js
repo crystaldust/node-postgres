@@ -158,7 +158,7 @@ class ConnectionParameters {
     }
     dns.lookup(this.host, function (err, address) {
       if (err) return cb(err, null)
-      params.push('hostaddr=' + quoteParamValue(address))
+      // params.push('hostaddr=' + quoteParamValue(address))
       return cb(null, params.join(' '))
     })
   }
